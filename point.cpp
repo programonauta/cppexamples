@@ -12,11 +12,6 @@ public:
     double x, y;
 };
 
-point operator+ (point& p1, point& p2) {
-    point sum = {p1.x + p2.x, p1.y + p2.y};
-    return sum;
-}
-
 /*
 
   Usual signature for overloading ostream& operator<<(stream& out, 
@@ -31,11 +26,19 @@ ostream& operator<< (ostream&out, const point& p) {
     return out;
 }
 
+/*
+point operator+ (point& p1, point& p2) {
+    point sum = {p1.x + p2.x, p1.y + p2.y};
+    return sum;
+}
+*/
+
+
 int main() {
     point a = {3.5, 2.5}, b = {2.5, 4.5}, c;
 
     cout << "a = " << a << " b = " << b << endl;
-    cout << "sum = " << a + b << endl;
+//    cout << "sum = " << a + b << endl;
     return 0;
 }
 
