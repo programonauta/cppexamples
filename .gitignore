@@ -1,6 +1,7 @@
 #executable files
 assign1
 ioexample
+*.
 
 # Compiled Object files
 *.slo

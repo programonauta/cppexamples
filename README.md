@@ -19,7 +19,7 @@ To generate debug information, just use `-g` option
 
 ## Source codes
 #### Assign
-Some basics differences between C and C++
+Some basic differences between C and C++
 
 * Files: 
  * `assign1.c`
