@@ -6,6 +6,9 @@
 !/**/
 !*.*
 
+# Project files
+output.txt
+
 # Compiled Object files
 *.slo
 *.lo
