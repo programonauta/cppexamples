@@ -30,4 +30,12 @@ Some basic differences between C and C++
  * `<vector>`
  * `const` instead `define`
  * `inline`
- 
+
+#### Dynamic Array
+Create multidimensional arrays dynamicaly
+
+* File:
+ * dyn-array.cpp
+* Subjects
+ * `new` and `delete` chuncks of memory
+ * pointers to array
