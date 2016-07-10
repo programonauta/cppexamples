@@ -113,4 +113,4 @@ This example shows how to use two functions with same name. The only difference 
  * `inline`
  * Use two different functions with same name
 
-P
+
