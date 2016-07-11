@@ -71,16 +71,18 @@ Chaining list`
  * pointers
 
 #### Point Class
-This example uses classes to store cartesians points. 
+These examples use classes to store multidimensional points. 
 Using overloading to allow basic operations with points as display, add and multiply
 
  * Files
   * point.cpp
   * pointConstructor.cpp
+  * pointMultiDim.cpp
 * Subjects
  * Classes
  * `ostream`
  * Operators overloading
+ * Dynamic allocation
 
 #### Template
 Use of template. You don't need to worry about convertions
