@@ -7,7 +7,7 @@ On this repository you can find some basic examples in C++
 I started this repository when I attended the course [C++ for C Programmers](https://www.coursera.org/learn/c-plus-plus-a/home/welcome "Coursera").
 Then, I decided use this as a quick reference when need to use some features that are normally confused, like pointers, lists, casting, etc.
 ## Organization
-Each subdirectory has one or more source codes, someones has C and C++ files to show differences between them.=
+Each subdirectory has one or more source codes, someones has C and C++ files to show differences between them.
 ## How to compile and run
 ### Compile
 Just use `g++ <source file>.cpp -o <executable>` 
@@ -74,15 +74,20 @@ Chaining list`
 These examples use classes to store multidimensional points. 
 Using overloading to allow basic operations with points as display, add and multiply
 
+Here there is an example on how separate header and implementation files of a Class
+
+to run just execute `g++ main.cpp point.cpp -o main -std=c++11` include option `-g` to debug
+
  * Files
-  * point.cpp
-  * pointConstructor.cpp
-  * pointMultiDim.cpp
+  * point.h
+  * point.cpp 
+  * main.cpp
 * Subjects
  * Classes
  * `ostream`
  * Operators overloading
  * Dynamic allocation
+ * `<vector>`
 
 #### Template
 Use of template. You don't need to worry about convertions
