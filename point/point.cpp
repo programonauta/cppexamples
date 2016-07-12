@@ -1,49 +1,64 @@
 //
-// Exemple of how to use struct in C++
-//
-// Week 2, lecture 2.10
+// Pointer class implementation
 //
 
+#include "point.h"
 #include <iostream>
 using namespace std;
 
-class point {
-  public:
-    double x, y;
-};
+// Constructor
+Point::Point(int dimen) {
 
-/*
+  // Could not accept dimension less then 1, don't return an error, but set default
+  if (dimen < 1)
+    dimen= 2;
 
-   Usual signature for overloading ostream& operator<<(stream& out, 
-   const my_type& v) 
-   both arguments are passed by reference
-   my_type is passed with a const modifier so as not 
-   be modified.
+  dimension = dimen;
 
-*/
-ostream& operator<< (ostream&out, const point& p) {
-  out << "( " << p.x << ", " << p.y << " )";
-  return out;
+  coord.resize(dimen);
+  for (int i = 0; i < dimension; ++i)
+    coord[i] = 0.0; 
+
+} // Constructor
+
+// Function to calculate distance to other point
+double Point::dist(Point other) {
+  double sum = 0;
+  for (int i = 0; i < dimension; ++i)
+    sum += pow(coord[i] - other.coord[i], 2);
+  return sqrt(sum);
 }
 
-point operator+ (point& p1, point& p2) {
-  point sum = {p1.x + p2.x, p1.y + p2.y};
+
+Point operator+ (Point& p1, Point& p2) {
+
+  int majorDim = (p1.dimension > p2.dimension ? p1.dimension : p2.dimension);
+  Point sum(majorDim); // Create a variable coordinates 0s with greater dimension
+
+  for (int i=0; i < majorDim; i++) {
+    if ((i+1) <= p1.dimension)
+      sum.coord[i] += p1.coord[i];
+    if ((i+1) <= p2.dimension)
+      sum.coord[i] += p2.coord[i];
+  }
   return sum;
 }
 
-point operator* (double m1, point& p1) {
-  point mult = {m1 * p1.x, m1 * p1.y};
-  return mult;
+Point operator* (double m1, Point& p1) {
+
+  Point prod(p1.dimension); // Create a variable coordinates 0s 
+
+  for (int i=0; i < p1.dimension; i++) 
+      prod.coord[i] = m1 * p1.coord[i];
+  return prod;
 }
 
-int main() {
-  double m = 0.5;
-  point a = {3.2, 2.4}, b = {2.9, 4.1}, c;
+ostream& operator<< (ostream&out, Point& p) {
+    out << "(";
+    for (int i = 0; i < p.dimension - 1; ++i)
+        out <<  p.coord[i] << ", ";
 
-  cout << "a = " << a << " b = " << b << endl;
-  cout << "sum = " << a + b << endl;
-  cout << "mult = " << m * a << endl;
-  cout << "mult = " << 0.2 * a << endl;
-  return 0;
+    out << p.coord[p.dimension - 1] << ")";
+    return out;
 }
 
