@@ -86,13 +86,16 @@ Chaining list`
 These examples use classes to store multidimensional points. 
 Using overloading to allow basic operations with points as display, add and multiply
 
+The pointAtt.cpp file shows classes inheritence, including a new attribute on the new Class derived from Point Class
+
 Here there is an example on how separate header and implementation files of a Class
 
 to run just execute `g++ main.cpp point.cpp -o main -std=c++11` include option `-g` to debug
 
  * Files
   * point.h
-  * point.cpp 
+  * point.cpp
+  * pointAtt.cpp
   * main.cpp
 * Subjects
  * Classes
@@ -100,6 +103,7 @@ to run just execute `g++ main.cpp point.cpp -o main -std=c++11` include option `
  * Operators overloading
  * Dynamic allocation
  * `<vector>`
+ * Inheritance
 
 #### Template
 Use of template. You don't need to worry about convertions
