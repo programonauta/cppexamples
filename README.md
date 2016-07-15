@@ -42,11 +42,15 @@ Create multidimensional arrays dynamicaly
 
 #### Inheritance
 Basic examples of inheritance:
-* Shape -> Rectangle -> Square
-* Shape -> Triangle
+ Shape -> Rectangle -> Square
+ Shape -> Triangle
 
 * File
  * inheritance.cpp
+* Subjects
+ * Inheritance
+ * Derived classes
+ * Constructors
 
 #### Inner block
 Shows the "value" of a variable inside a block
