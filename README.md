@@ -40,6 +40,14 @@ Create multidimensional arrays dynamicaly
  * `new` and `delete` chuncks of memory
  * pointers to array
 
+#### Inheritance
+Basic examples of inheritance:
+* Shape -> Rectangle -> Square
+* Shape -> Triangle
+
+* File
+ * inheritance.cpp
+
 #### Inner block
 Shows the "value" of a variable inside a block
 

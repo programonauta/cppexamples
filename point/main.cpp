@@ -10,6 +10,8 @@ int main() {
 
     Point a(5), b(6);
 
+    vector<Point> items;
+
     for (int i = 0; i < 5; ++i) {
       a.coord[i] = 3.5 + i;
       b.coord[i] = 8.5 + (double)i / 10;
@@ -37,6 +39,12 @@ int main() {
     s.coord = {2, 2, 2};
 
     cout << "Distance btw " << r << " and " << s << ": " << r.dist(s) << endl;
+
+    items.resize(2);
+
+    for (int i = 0; i < 2; ++i)
+      for (int j = 0; j < items[i].dimension; ++j)
+        cout << "Item [" << i << "] [" << j << "] = " << items[i].coord[j] << endl;
 
     return 0;
 }
