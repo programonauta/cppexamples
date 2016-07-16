@@ -43,7 +43,7 @@ int main() {
     items.resize(2);
 
     for (int i = 0; i < 2; ++i)
-      for (int j = 0; j < items[i].dimension; ++j)
+      for (int j = 0; j < items[i].coord.size(); ++j)
         cout << "Item [" << i << "] [" << j << "] = " << items[i].coord[j] << endl;
 
     return 0;

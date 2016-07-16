@@ -15,7 +15,6 @@ class Point {
 
     // coordinates of point
     vector<double> coord; 
-    int dimension;
 
     // Constructor
     Point(int dimen = 2);
