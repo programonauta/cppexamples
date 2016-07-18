@@ -92,11 +92,14 @@ Here there is an example on how separate header and implementation files of a Cl
 
 to run just execute `g++ main.cpp point.cpp -o main -std=c++11` include option `-g` to debug
 
+Or you can run `make` to compile and generate executable file `main`
+
  * Files
   * point.h
   * point.cpp
   * pointAtt.cpp
   * main.cpp
+  * Makefile
 * Subjects
  * Classes
  * `ostream`
@@ -104,6 +107,7 @@ to run just execute `g++ main.cpp point.cpp -o main -std=c++11` include option `
  * Dynamic allocation
  * `<vector>`
  * Inheritance
+ * Makefile
 
 #### Template
 Use of template. You don't need to worry about convertions

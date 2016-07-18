@@ -35,8 +35,8 @@ int main() {
     cout << "Distance btw " << x << " and " << y << ": " << x.dist(y) << endl;
 
     Point r(3), s(3), t(3);
-    r.coord = {1, 1, 1};
-    s.coord = {2, 2, 2};
+    r.coord = {2, 2, 2};
+    s.coord = {3, 3, 3};
 
     cout << "Distance btw " << r << " and " << s << ": " << r.dist(s) << endl;
 
