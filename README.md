@@ -82,6 +82,20 @@ Chaining list`
  * memory allocation
  * pointers
 
+#### Main Parameters
+Processing parameters passing by commamnd line
+
+Some simple instrcutions on how to parse command line options
+
+Found tips on [Stack Overflow](http://stackoverflow.com/questions/865668/how-to-parse-command-line-arguments-in-c)
+
+* File
+ * mainParameters.cpp
+
+* Subjects
+ * argv, argc
+ * Command line Options, Parameters
+
 #### Point Class
 These examples use classes to store multidimensional points. 
 Using overloading to allow basic operations with points as display, add and multiply
