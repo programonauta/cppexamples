@@ -40,6 +40,14 @@ Create multidimensional arrays dynamicaly
  * `new` and `delete` chuncks of memory
  * pointers to array
 
+#### Enum 
+Enum examples using C++ 11
+* File
+ * enum.cpp
+* Subjects
+ * Enumeration
+ * Scope
+
 #### Inheritance
 Basic examples of inheritance:
  Shape -> Rectangle -> Square
@@ -122,6 +130,15 @@ Or you can run `make` to compile and generate executable file `main`
  * `<vector>`
  * Inheritance
  * Makefile
+
+#### STL - Standard Template Library
+Examples on how to use STL
+
+* Files
+ * square.cpp
+
+* Subjects
+ * Iterator - See `square.cpp` to see how to iterate a vector
 
 #### Template
 Use of template. You don't need to worry about convertions
