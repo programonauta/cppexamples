@@ -31,6 +31,15 @@ Some basic differences between C and C++
  * `const` instead `define`
  * `inline`
 
+### CSV Reader
+A simple program to read a CSV file
+* File
+ * csv-reader.cpp
+* Subjects
+ * getline
+ * string::find()
+ * string::substr()
+
 #### Dynamic Array
 Create multidimensional arrays dynamicaly
 
