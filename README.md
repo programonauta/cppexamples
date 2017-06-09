@@ -21,7 +21,7 @@ To generate debug information, just use `-g` option
 #### Assign
 Some basic differences between C and C++
 
-* Files: 
+* Files 
   * `assign1.c`
   * `assign1.cpp`
 * Subjects
@@ -34,17 +34,17 @@ Some basic differences between C and C++
 ### CSV Reader
 A simple program to read a CSV file
 * File
-  * csv-reader.cpp
+  * `csv-reader.cpp`
 * Subjects
-  * getline
-  * string::find()
-  * string::substr()
+  * `getline`
+  * `string::find()`
+  * `string::substr()`
 
 #### Dynamic Array
 Create multidimensional arrays dynamicaly
 
 * File
-  * dyn-array.cpp
+  * `dyn-array.cpp`
 * Subjects
   * `new` and `delete` chuncks of memory
   * pointers to array
@@ -52,18 +52,18 @@ Create multidimensional arrays dynamicaly
 #### Enum 
 Enum examples using C++ 11
 * File
-  * enum.cpp
+  * `enum.cpp`
 * Subjects
   * Enumeration
   * Scope
 
 #### Inheritance
-Basic examples of inheritance:
+* Basic examples of inheritance:
   * Shape -> Rectangle -> Square
   * Shape -> Triangle
 
 * File
-  * inheritance.cpp
+  * `inheritance.cpp`
 * Subjects
   * Inheritance
   * Derived classes
@@ -73,14 +73,14 @@ Basic examples of inheritance:
 Shows the "value" of a variable inside a block
 
 * File
-  * innerblock.c
+  * `innerblock.c`
 
 #### IO Example
 A very simple examples of IO: read and write files, `cin` and `cout`
 
 * Files
-  * ioexample.cpp
-  * readFile.cpp
+  * `ioexample.cpp`
+  * `readFile.cpp`
 * Subjects
   * `namespace std`
   * `cout`
@@ -92,7 +92,7 @@ A very simple examples of IO: read and write files, `cin` and `cout`
 Chaining list`
 
 * File
-  * list.cpp
+  * `list.cpp`
 * Subjects
   * constructor
   * destructor
@@ -107,7 +107,7 @@ Some simple instrcutions on how to parse command line options
 Found tips on [Stack Overflow](http://stackoverflow.com/questions/865668/how-to-parse-command-line-arguments-in-c)
 
 * File
-  * mainParameters.cpp
+  * `mainParameters.cpp`
 
 * Subjects
   * argv, argc
@@ -126,11 +126,11 @@ to run just execute `g++ main.cpp point.cpp -o main -std=c++11` include option `
 Or you can run `make` to compile and generate executable file `main`
 
  * Files
-   * point.h
-   * point.cpp
-   * pointAtt.cpp
-   * main.cpp
-   * Makefile
+   * `point.h`
+   * `point.cpp`
+   * `pointAtt.cpp`
+   * `main.cpp`
+   * `Makefile`
 * Subjects
   * Classes
   * `ostream`
@@ -144,7 +144,7 @@ Or you can run `make` to compile and generate executable file `main`
 Examples on how to use STL
 
 * Files
-  * square.cpp
+  * `square.cpp`
 
 * Subjects
   * Iterator - See `square.cpp` to see how to iterate a vector
@@ -153,8 +153,8 @@ Examples on how to use STL
 Use of template. You don't need to worry about convertions
 
 * Files
-  * copyVector.cpp
-  * template.cpp
+  * `copyVector.cpp`
+  * `template.cpp`
 * Subjects
   * template
   * Casting
@@ -163,7 +163,7 @@ Use of template. You don't need to worry about convertions
 Example of how to define a varible type. 
 
 * File
-  * typedef.cpp
+  * `typedef.cpp`
 * Subjects
   * `typedef'
   * `template`
@@ -174,8 +174,8 @@ Example of how to define a varible type.
 This example shows how to use two functions with same name. The only difference is the parameters types.
 
 * Files
-  * swap.c
-  * swap.cpp
+  * `swap.c`
+  * `swap.cpp`
 * Subjects
   * `inline`
   * Use two different functions with same name
