@@ -22,82 +22,82 @@ To generate debug information, just use `-g` option
 Some basic differences between C and C++
 
 * Files: 
- * `assign1.c`
- * `assign1.cpp`
+  * `assign1.c`
+  * `assign1.cpp`
 * Subjects
- * Comments
- * `<iostream>` and `namespace`
- * `<vector>`
- * `const` instead `define`
- * `inline`
+  * Comments
+  * `<iostream>` and `namespace`
+  * `<vector>`
+  * `const` instead `define`
+  * `inline`
 
 ### CSV Reader
 A simple program to read a CSV file
 * File
- * csv-reader.cpp
+  * csv-reader.cpp
 * Subjects
- * getline
- * string::find()
- * string::substr()
+  * getline
+  * string::find()
+  * string::substr()
 
 #### Dynamic Array
 Create multidimensional arrays dynamicaly
 
 * File
- * dyn-array.cpp
+  * dyn-array.cpp
 * Subjects
- * `new` and `delete` chuncks of memory
- * pointers to array
+  * `new` and `delete` chuncks of memory
+  * pointers to array
 
 #### Enum 
 Enum examples using C++ 11
 * File
- * enum.cpp
+  * enum.cpp
 * Subjects
- * Enumeration
- * Scope
+  * Enumeration
+  * Scope
 
 #### Inheritance
 Basic examples of inheritance:
- Shape -> Rectangle -> Square
- Shape -> Triangle
+  * Shape -> Rectangle -> Square
+  * Shape -> Triangle
 
 * File
- * inheritance.cpp
+  * inheritance.cpp
 * Subjects
- * Inheritance
- * Derived classes
- * Constructors
+  * Inheritance
+  * Derived classes
+  * Constructors
 
 #### Inner block
 Shows the "value" of a variable inside a block
 
 * File
- * innerblock.c
+  * innerblock.c
 
 #### IO Example
 A very simple examples of IO: read and write files, `cin` and `cout`
 
 * Files
- * ioexample.cpp
- * readFile.cpp
+  * ioexample.cpp
+  * readFile.cpp
 * Subjects
- * `namespace std`
- * `cout`
- * `cin`
- * `ifstream`
- * `ofstream`
+  * `namespace std`
+  * `cout`
+  * `cin`
+  * `ifstream`
+  * `ofstream`
 
 #### List
 Chaining list`
 
 * File
- * list.cpp
+  * list.cpp
 * Subjects
- * constructor
- * destructor
- * memory allocation
- * pointers
+  * constructor
+  * destructor
+  * memory allocation
+  * pointers
 
 #### Main Parameters
 Processing parameters passing by commamnd line
@@ -107,11 +107,11 @@ Some simple instrcutions on how to parse command line options
 Found tips on [Stack Overflow](http://stackoverflow.com/questions/865668/how-to-parse-command-line-arguments-in-c)
 
 * File
- * mainParameters.cpp
+  * mainParameters.cpp
 
 * Subjects
- * argv, argc
- * Command line Options, Parameters
+  * argv, argc
+  * Command line Options, Parameters
 
 #### Point Class
 These examples use classes to store multidimensional points. 
@@ -126,58 +126,58 @@ to run just execute `g++ main.cpp point.cpp -o main -std=c++11` include option `
 Or you can run `make` to compile and generate executable file `main`
 
  * Files
-  * point.h
-  * point.cpp
-  * pointAtt.cpp
-  * main.cpp
-  * Makefile
+   * point.h
+   * point.cpp
+   * pointAtt.cpp
+   * main.cpp
+   * Makefile
 * Subjects
- * Classes
- * `ostream`
- * Operators overloading
- * Dynamic allocation
- * `<vector>`
- * Inheritance
- * Makefile
+  * Classes
+  * `ostream`
+  * Operators overloading
+  * Dynamic allocation
+  * `<vector>`
+  * Inheritance
+  * Makefile
 
 #### STL - Standard Template Library
 Examples on how to use STL
 
 * Files
- * square.cpp
+  * square.cpp
 
 * Subjects
- * Iterator - See `square.cpp` to see how to iterate a vector
+  * Iterator - See `square.cpp` to see how to iterate a vector
 
 #### Template
 Use of template. You don't need to worry about convertions
 
 * Files
- * copyVector.cpp
- * template.cpp
+  * copyVector.cpp
+  * template.cpp
 * Subjects
- * template
- * Casting
+  * template
+  * Casting
 
 #### Type def
 Example of how to define a varible type. 
 
 * File
- * typedef.cpp
+  * typedef.cpp
 * Subjects
- * `typedef'
- * `template`
- * Casting
- * Operators overloading 
+  * `typedef'
+  * `template`
+  * Casting
+  * Operators overloading 
 
 #### Two functions, same name
 This example shows how to use two functions with same name. The only difference is the parameters types.
 
 * Files
- * swap.c
- * swap.cpp
+  * swap.c
+  * swap.cpp
 * Subjects
- * `inline`
- * Use two different functions with same name
+  * `inline`
+  * Use two different functions with same name
 
 
