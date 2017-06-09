@@ -180,4 +180,11 @@ This example shows how to use two functions with same name. The only difference 
   * `inline`
   * Use two different functions with same name
 
-
+#### Vector
+Some examples to show how to use vectors
+* Files
+  * `vectorArg.cpp` - Show how to pass vector as an argument
+* Subjects
+  * Vector as an arguments
+  * `vector::push_back()`
+  * `vector::size()`
