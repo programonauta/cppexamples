@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int incVec (vector<string> & v)
+int incVec (vector<string> &v)
 {
   
   v.push_back("item 0");
