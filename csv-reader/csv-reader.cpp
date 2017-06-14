@@ -86,7 +86,7 @@ int getCSVLine(ifstream &inCSVFile, vector<string> &v)
           currentState = AUT_ERROR;
         break;
       case AUT_BACK_SLASH:
-        field += c;
+        field += c;  // append the character without verification
         currentState = AUT_QUOTATION;
         break;
     }
@@ -134,58 +134,25 @@ int main(int argc, char* argv[])
   while (infile)
   {
     r = getCSVLine(infile, lineCSV);
-    cout << "Line size: " << lineCSV.size() << "\n";
+    cout << "Line number: " << ++lineNo << " Number of fields: " << lineCSV.size() << "\n";
     for (int i = 0; i < lineCSV.size(); i++)
-      cout << lineCSV[i] << ",";
+    {
+      cout << "   " << lineCSV[i] << " (is ";
+      if (!isDouble(lineCSV[i].c_str()))
+          cout << "not ";
+      cout << "double) ,";
+      if (isDouble(lineCSV[i].c_str())) cout << "|" << stod(lineCSV[i]) << "|, ";
+    }
+      cout << "\n";
     if (!r)
     {
-      cout << "Error in this line \n\n";
+      cout << "Error - line " << lineNo << "\n\n";
       return 0;
     }
     lineCSV.resize(0);
     cout << "\n";
   }
 
-  if (!r)
-    cout << "Error in the first line\n\n";
-
   cout << "Everything OK!\n**==**==**==**==**==**==**==\n\n";
 
-  return 0;
-
-  char* endptr = 0;
-  string abc = "    -od32.234bcd   ";
-
-  if (isDouble(abc.c_str()))
-    cout << "Valid Double\n";
-  else
-    cout << "Invalid Double\n";
-
-  dataVar = stod(abc);
-
-  cout << dataVar << "*** Double\n";
-
-  if(*endptr != '\0' || endptr == abc)
-    cout << "Invalid string\n";
-
-  cout << dataVar / 10 << "\n\n\n*************\n\n";
-
-  while (infile.good())
-  {
-    getline (infile, value, ','); // read a string until next comma
-    if ((lfFound = value.find("\n"))!=string::npos) // found a line feed
-    {
-      cout << value.substr(0, lfFound) << " Line " << ++lineNo << ": " << ++fieldCount << " field(s)\n";
-      fieldCount = 1;
-      //cout << value.substr(lfFound + 1) << "\n\n\n**********\n\n";
-      //dataVar = stod(value.substr(0, lfFound));
-      cout << value.substr(lfFound + 1) << ", "; 
-    }
-    else
-    {
-      dataVar = stod(value);
-      cout << "double: " << dataVar/10 << ", "; 
-      fieldCount++;
-    }
-  }
 }
