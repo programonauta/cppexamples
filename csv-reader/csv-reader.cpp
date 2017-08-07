@@ -2,13 +2,7 @@
 // Read file csv
 //
 
-#include <iostream>
-#include <fstream>
-#include <vector>
-using namespace std;
-
-ifstream infile;
-
+#include "csv-reader.h"
 //
 // Function to parse a CSV file using Finite Automaton
 // return 1 if found a valid CSV line
@@ -102,57 +96,4 @@ int getCSVLine(ifstream &inCSVFile, vector<string> &v)
   }
 
   return (currentState == AUT_END);
-}
-
-bool isDouble(const char *str)
-{
-  char* endptr = 0;
-  strtod(str, &endptr);
-
-  return !((endptr == str));
-}
-
-int main(int argc, char* argv[]) 
-{
-  string input = "input.csv";
-  string value;
-  int lineNo = 0;
-  int fieldCount = 0;
-  size_t lfFound;
-  double dataVar = 0.;
-  vector<string> lineCSV;
-
-  infile.open(input.c_str());
-  if (!infile)
-  {
-    cout << "Unable to open input."<< endl;
-    return 1;
-  }
-
-  int r = 0;
-
-  while (infile)
-  {
-    r = getCSVLine(infile, lineCSV);
-    cout << "Line number: " << ++lineNo << " Number of fields: " << lineCSV.size() << "\n";
-    for (int i = 0; i < lineCSV.size(); i++)
-    {
-      cout << "   " << lineCSV[i] << " (is ";
-      if (!isDouble(lineCSV[i].c_str()))
-          cout << "not ";
-      cout << "double) ,";
-      if (isDouble(lineCSV[i].c_str())) cout << "|" << stod(lineCSV[i]) << "|, ";
-    }
-      cout << "\n";
-    if (!r)
-    {
-      cout << "Error - line " << lineNo << "\n\n";
-      return 0;
-    }
-    lineCSV.resize(0);
-    cout << "\n";
-  }
-
-  cout << "Everything OK!\n**==**==**==**==**==**==**==\n\n";
-
 }

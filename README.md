@@ -57,6 +57,17 @@ Enum examples using C++ 11
   * Enumeration
   * Scope
 
+#### Graphs
+Some algorithms of Graph Theory
+
+`connected.app` gives an example to find connected components in a undirected graph. Based on source find on http://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/
+
+* Files
+  * `connected.cpp`
+* Subjects
+  * Graph Theory
+  * lists
+
 #### Inheritance
 * Basic examples of inheritance:
   * Shape -> Rectangle -> Square
