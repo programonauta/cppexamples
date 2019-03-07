@@ -8,6 +8,7 @@
 
 #include <math.h>
 #include <vector>
+#include <iostream>
 using namespace std;
 
 class Point {
@@ -24,10 +25,11 @@ class Point {
 
 };
 
+ostream& operator<< (ostream&out, Point& p);
+
 Point operator+ (Point& p1, Point& p2);
 
 Point operator* (double m1, Point& p1);
 
-ostream& operator<< (ostream&out, Point& p);
 
 #endif
