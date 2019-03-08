@@ -19,6 +19,7 @@ class Point {
 
     // Constructor
     Point(int dimen = 2);
+    Point(vector<double> p_coord);
 
     // Function to calculate distance to other point
     double dist(Point other); 

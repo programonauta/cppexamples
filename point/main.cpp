@@ -46,6 +46,12 @@ int main() {
       for (int j = 0; j < items[i].coord.size(); ++j)
         cout << "Item [" << i << "] [" << j << "] = " << items[i].coord[j] << endl;
 
+    cout << "Initialize with vector" << endl;
+
+    Point w({0.51, 10.45, 20.35});
+
+    cout << "Point w " << w << endl;
+
     return 0;
 }
 

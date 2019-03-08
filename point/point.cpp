@@ -9,8 +9,8 @@ using namespace std;
 // Constructor
 Point::Point(int dimen) {
 
-  // Could not accept dimension less then 1, don't return an error, but set default
-  if (dimen < 1)
+  // Could not accept dimension less then 2, don't return an error, but set default
+  if (dimen < 2)
     dimen= 2;
 
   coord.resize(dimen);
@@ -18,6 +18,20 @@ Point::Point(int dimen) {
     coord[i] = 0.0; 
 
 } // Constructor
+
+Point::Point(vector<double> p_coord)
+{
+  coord = p_coord;
+  size_t dimen = coord.size();
+
+  if (dimen < 1)
+  {
+    coord.resize(2);
+    if (dimen == 0)
+      coord[0] = 0.0;
+    coord[1] = 0.0;
+  }
+}
 
 // Function to calculate distance to other point
 double Point::dist(Point other) {

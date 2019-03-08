@@ -28,4 +28,7 @@ int main (int argc, char* argv[])
   for (int i = 0; i < s; i++)
     cout << names[i] << "\n";
 
+  for (string st : names)
+    cout << st << endl;
+
 }
